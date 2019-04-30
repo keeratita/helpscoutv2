@@ -1,0 +1,5 @@
+{
+  "op" : "replace",
+  "path" : "/subject",
+  "value" : "super cool new subject"
+}

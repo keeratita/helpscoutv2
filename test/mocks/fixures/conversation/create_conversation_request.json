@@ -1,0 +1,22 @@
+{
+  "subject" : "Subject",
+  "customer" : {
+    "id" : 100
+  },
+  "mailboxId" : 85,
+  "type" : "email",
+  "status" : "active",
+  "createdAt" : "2012-10-10T12:00:00Z",
+  "threads" : [ {
+    "type" : "customer",
+    "customer" : {
+      "id" : 100
+    },
+    "text" : "Hello, Help Scout. How are you?"
+  } ],
+  "tags" : [ "vip" ],
+  "fields" : [ {
+    "id" : 531,
+    "value" : "trial"
+  } ]
+}

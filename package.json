@@ -1,0 +1,28 @@
+{
+  "name": "helpscout-v2",
+  "version": "0.0.1",
+  "description": "Node.js package for integrating with HelpScout API V2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha $(find test -name 'test*.js')"
+  },
+  "keywords": [
+    "helpscout",
+    "api",
+    "nodejs"
+  ],
+  "author": "Keerati Tansawatcharoen <keerati.tansawatcharoen@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai-as-promised": "^7.1.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nock": "^10.0.1",
+    "should": "^13.2.3",
+    "sinon": "^6.3.5"
+  }
+}
