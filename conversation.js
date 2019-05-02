@@ -94,6 +94,28 @@ Conversation.prototype.get = function get(id, options = {}) {
 };
 
 /**
+ * Get threads in a conversation
+ * @param {*} id
+ * @param {*} options
+ */
+Conversation.prototype.threads = function get(id, options = {}) {
+  const { oauth_token } = this;
+
+  options = {
+    oauth_token,
+    expectedStatus: [200, 301],
+    ...options
+  };
+
+  this.IsVerified(options);
+
+  if (!id) throw new Error('Conversation id is required.');
+  if (typeof id !== 'number') throw new Error('Conversation id should be a number.');
+
+  return buildRequest(`${endpoint}/${id}/threads`, 'GET', null, options);
+};
+
+/**
  * Create a conversation
  * @param {*} params
  * @param {*} options
