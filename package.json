@@ -1,6 +1,6 @@
 {
   "name": "helpscout-v2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js package for integrating with HelpScout API V2",
   "main": "index.js",
   "scripts": {
